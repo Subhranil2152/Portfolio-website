@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Subhranil-Portfolio Website</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    body{
+      background-color:rgb(2, 2, 15);
+      color:white;
+      font-family: 'Poppins', sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(4, 4, 31);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      text-decoration: none;
+      color: lightslategray;
+      font-size: 1.1rem;
+    }
+    .left{
+      font-size: 1.5rem;
+    }
+    .firstSection{
+      display:flex;
+      justify-content: space-around;
+      margin:90px 0;
+      align-items: center;
+    }
+    .firstSection div{
+      width:30%;
+    }
+    .leftsection
+    {
+      font-size: 2.8rem;
+    }
+   
+    .rightsection{
+     color:white;
+     margin:20px;
+     display:flex;
+     font-size: 2rem;
+    }
+    .leftsection ul{
+      list-style-type: none;
+    }
+    .l{
+      color: #FFF;
+      box-shadow: 0 0 30px 3px blue;
+      border-radius: 100%;
+      font-size: 50px;
+      background-color: skyblue;
+      margin:50px;
+    }
+    .i{
+      color: #FFF;
+      box-shadow: 0 0 30px 3px brown;
+      border-radius: 100%;
+      font-size: 50px;
+      background-color: darkmagenta;
+      margin:50px;
+    }
+    .lc{
+      color: #FFF;
+      box-shadow: 0 0 30px 3px grey;
+      border-radius: 100%;
+      font-size: 50px;
+      background-color: white;
+      margin:50px;
+    }
+    .g{
+      color: #FFF;
+      box-shadow: 0 0 30px 3px darkgray;
+      border-radius: 100%;
+      font-size: 50px;
+      background-color: lightgray;
+      margin:50px;
+    }
+    .i:hover{
+      width: 55%;
+    }
+    .lc:hover{
+      width: 80%;
+      margin-right:80px;
+    }
+    .g:hover{
+      width: 55%;
+      display:flex;
+    }
+    .l:hover{
+      width: 55%;
+    }
+    .first{
+      display:flex;
+      justify-content: center;
+    }
+    .second{
+      display:flex;
+      justify-content: center;
+    }
+    mark{
+      background-color: transparent;
+      color:aquamarine;
+    }
+    mark:hover{
+      background-color: transparent;
+      color:rgb(245, 207, 104);
+      font-size: 1.95rem;
+    }
+    .rightsection div{
+      width:100%;
+    }
+    .cap{
+      background-color: transparent;
+      color:rgb(74, 61, 252);
+    }
+    .cap:hover{
+      background-color: transparent;
+      color:rgb(240, 61, 61);
+      font-size: 1.95rem;
+    }
+    .ci{
+      display: none;
+      width:70%;
+      opacity: 80%;
+      border-radius: 60%;
+    }
+    .cap:hover + .ci{
+      display: block;
+    }
+
+   /* Media query for screens less than 700px */
+   @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        height: auto;
+      }
+      .left {
+        margin-bottom: 10px;
+      }
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Subhranil's Portfolio</div>
+      <div class="right"> 
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Education</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="forms.html">Contact Me</a></li>
+          <li><a href="solar.html">Chill Zone</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstSection">
+      <div class="leftsection">
+        <ul class="first">
+          <li><a href="https://www.linkedin.com/in/subhranil-karmakar-526311200/" target="blank"><img src="linkedin.png" width="80" class="l"></a></li>
+          <li><a href="https://github.com/Subhranil2152" target="blank"><img src="github.png" width="80" class="g"></a></li>
+        </ul>
+        <ul class="second">
+          <li><a href="https://leetcode.com/subhranil_2152/" target="blank"><img src="lc.png" width="80" class="lc"></a></li>
+          <li><a href="https://www.instagram.com/subhranil_buzz/?hl=en" target="blank"><img src="instagram.png" width="80" class="i"></a></li>
+        </ul>
+      </div>
+      <div class="rightsection">
+        <div>
+          Greetings, I'm <mark>Subhranil Karmakar</mark>. I'm currently enrolled in <mark>Kalinga Institute of Industrial Technology</mark> to pursue a B. Tech. in <mark>Computer Engineering</mark>. I've provided some of my links <mark class="cap">"on your left"</mark>.<img class="ci" src="cap.jpg">This is my portfolio website, which includes all of my necessary information as well as other intriguing features.
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

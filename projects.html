@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <title>Subhranil-Portfolio Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(2, 2, 15);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(4, 4, 31);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      text-decoration: none;
+      color: lightslategray;
+      font-size: 1.1rem;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      margin: 30px 100px;
+      align-items: center;
+      margin-top: 100px;
+    }
+
+    .float {
+      float: right;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      margin-left: auto;
+      margin-right: 10px;
+    }
+
+    .box {
+      color: white;
+      height: auto;
+      max-width: 60%;
+      border-radius: none;
+      margin: 5px;
+      display: flex;
+      font-size: 1.2rem;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .firstSection {
+      width: 100%;
+      padding: 12px;
+      margin-top: 200px;
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+    }
+
+    button {
+      background-color: rgb(159, 79, 224);
+      color: rgb(1, 11, 99);
+      border: none;
+      margin: 2px;
+      padding: 10px;
+      border-radius: 25px;
+      font-size: 14px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    button:hover {
+      background-color: whitesmoke;
+      color: rgb(2, 2, 15);
+      font-size: 1rem;
+    }
+
+    .but {
+      display: flex;
+      gap: 5px;
+      margin-top: auto;
+    }
+
+    .floatr {
+      width: 200px;
+      height: 100px;
+      display: flex;
+      float: right;
+      margin-left: 10px;
+      margin-right: auto;
+    }
+
+    img:hover {
+      width: 250px;
+      height: 180px;
+    }
+
+    p.box:hover {
+      font-size: 1.21rem;
+      color: rgb(132, 161, 241);
+    }
+
+    section a {
+      text-decoration: none;
+      color: white;
+    }
+
+    section h1:hover {
+      color: rgb(219, 158, 219);
+      font-size: 2rem;
+    }
+
+    section h1 {
+      color: purple;
+      display: flex;
+    }
+    /* Media query for screens less than 700px */
+   @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        height: auto;
+      }
+      .left {
+        margin-bottom: 10px;
+      }
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Subhranil's Portfolio</div>
+      <div class="right"> 
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Education</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="forms.html">Contact Me</a></li>
+          <li><a href="solar.html">Chill Zone</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="firstSection">
+      <div>
+        <a href="https://github.com/Subhranil2152/Driver-Drowsiness-Detection" target="_blank">
+          <h1>Drowsiness Detection In Drivers</h1><br>
+          <p class="box">
+            By calculating the aspect ratio and comparing it to the threshold value, the project assesses a driver's mouth, eye, and stitch positions to determine whether or not they are drowsy. If the driver is found to be intoxicated, they are informed.
+            <img class="float" src="drowsy driver.png" alt="drowsy driver">
+            <div class="but">
+              <button>Python</button>
+              <button>OpenCV</button>
+            </div>
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="firstSection">
+      <div>
+        <a href="https://github.com/Subhranil2152/IMDb-Database-Analysis" target="_blank">
+          <h1>IMDb Analysis</h1><br>
+          <p class="box">
+            We must examine an IMDb database to identify the top films that have been released by examining their reception and box office performance, and we must also clear the way for suggestions of films to be made. In addition to films, we also consider the directors who make the films.
+            <img class="floatr" src="IMDBO.png" alt="imdb">
+            <div class="but">
+              <button>Python</button>
+              <button>SQL</button>
+            </div>
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="firstSection">
+      <div>
+        <a href="https://github.com/Subhranil2152/UberDataAnalysis" target="_blank">
+          <h1>Uber Ride Analysis</h1><br>
+          <p class="box">
+            By examining each customer's ride path, we can learn several booking patterns, such as which place to arrive at what time and for what reason, and whether a roundtrip is feasible or not.
+            <img class="float" src="uber-logo-3-1.png" alt="uber">
+            <div class="but">
+              <button>Python</button>
+            </div>
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="firstSection">
+      <div>
+        <a href="https://github.com/Subhranil2152/Walmart-Stores-Analysis" target="_blank">
+          <h1>Walmart Store Analysis</h1><br>
+          <p class="box">
+            The key component is analyzing the sales pattern of the product. Which stores are selling more, which departments are more profitable, how the staff spend their holidays, and many other factors.
+            <img class="float" src="walmart-logo-28.png" alt="walmart">
+            <div class="but">
+              <button>Python</button>
+            </div>
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="firstSection">
+      <div>
+        <a href="https://github.com/Subhranil2152/portfolio" target="_blank">
+          <h1>Portfolio Website</h1><br>
+          <p class="box">
+            A responsive portfolio website that contains various information about the creator needed in an employment setting. Additionally, it provides a feedback form and a contact form, both of whose data entered can be viewed by the owner.
+           <br> <br><img class="floatr" src="portfolio.png" alt="portfolio">
+           <br> <div class="but">
+              <button>HTML</button>
+              <button>CSS</button>
+              <button>JavaScript</button>
+            </div>
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+
