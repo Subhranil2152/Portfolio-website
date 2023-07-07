@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Subhranil-Portfolio WEBsite</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgb(2, 2, 15);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(4, 4, 31);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      text-decoration: none;
+      color: lightslategray;
+      font-size: 1.1rem;
+    }
+    .left{
+      font-size: 1.5rem;
+    }
+    .firstSection{
+      display:flex;
+      justify-content: space-around;
+      margin: 90px;
+      align-items: center;
+    }
+    .firstSection div{
+      width: 85%;
+    }
+    .leftsection {
+      font-size: 1.3rem;
+    }
+   
+    .rightsection {
+      color: white;
+      width: 100%;
+      margin: 2px;
+      display: flex;
+      font-size: 1.8rem;
+    }
+  
+    .first {
+      display: flex;
+      justify-content: center;
+    }
+    .second {
+      display: flex;
+      justify-content: center;
+    }
+    .skillcontainer {
+      width: 50%;
+      padding: 12px;
+    }
+    .skillitem {
+      display: flex;
+      align-items: center;
+    }
+    .skill {
+      height: 6px;
+      margin-left: 2px;
+    }
+    .hundred {
+      margin-right: 0px;
+      background-color: blue;
+    }
+    .s5 {
+      margin-right: 8px;
+      background-color: rgb(108, 108, 241);
+    }
+    .fifty {
+      margin-right: 15px;
+      background-color: rgb(158, 158, 245);
+    }
+    .t5 {
+      margin-right: 22px;
+      background-color: rgb(243, 243, 245);
+    }
+    .rightsection li {
+      list-style: none;
+      width: 100%;
+    }
+    .rightsection li:hover {
+      color: rgb(108, 112, 112);
+      font-size: 1.9rem;
+    }
+    .edu {
+      width: 100%;
+      padding: 12px;
+    }
+    .edui {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      color: aqua;
+    }
+    .edus {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      color: rgb(228, 237, 245);
+    }
+      
+    /* Media query for screens less than or equal to 700px */
+  
+@media (max-width: 700px) {
+  nav {
+        flex-direction: column;
+        height: auto;
+      }
+      .left {
+        margin-bottom: 10px;
+      }
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 5px 0;
+      }
+  .firstSection {
+    flex-direction: column;
+    margin: 30px;
+  }
+  .leftsection {
+    text-align: center;
+  }
+  .rightsection {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .edu {
+    padding: 0;
+  }
+  .edui,
+  .edus {
+    width: 100%;
+  }
+  
+  
+}
+
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="left">Subhranil's Portfolio</div>
+      <div class="right"> 
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Education</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="forms.html">Contact Me</a></li>
+          <li><a href="solar.html">Chill Zone</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstSection">
+      <div class="leftsection">
+        <h1>Technical Skills</h1>
+        <div class="skillcontainer">
+          <div class="skillitem">HTML:<div class="skill hundred"></div></div>
+          <div class="skillitem">CSS:<div class="skill s5"></div></div>
+          <div class="skillitem">JavaScript:<div class="skill s5"></div></div>
+          <div class="skillitem">C++:<div class="skill hundred"></div></div>
+          <div class="skillitem">C:<div class="skill fifty"></div></div>
+          <div class="skillitem">Java:<div class="skill t5"></div></div>
+          <div class="skillitem">Python:<div class="skill s5"></div></div>
+          <div class="skillitem">R:<div class="skill t5"></div></div>
+          <div class="skillitem">React:<div class="skill t5"></div></div>
+        </div>
+        <br>
+        <h1>Non Technical Skills</h1>
+        <div class="skillcontainer">
+          <div class="skillitem">Leadership:<div class="skill hundred"></div></div>
+          <div class="skillitem">Creativity:<div class="skill s5"></div></div>
+          <div class="skillitem">Decision Making:<div class="skill s5"></div></div>
+          <div class="skillitem">Communication:<div class="skill hundred"></div></div>
+          <div class="skillitem">Problem Solving:<div class="skill fifty"></div></div>
+          <div class="skillitem">Teamwork:<div class="skill t5"></div></div>
+        </div>
+      </div>
+      <div class="rightsection">
+        <div class="edu">
+          <h1>Education</h1>
+          <div class="edui">University</div>
+          <div class="edus">
+            <ul>
+              <li>Kalinga Institute of Industrial Technology</li>
+              <li>Current CGPA: 8.99</li>
+            </ul>
+          </div>
+          <div class="edui">12th Boards</div>
+          <div class="edus">
+            <ul>
+              <li>School: Apeejay, Salt Lake</li>
+              <li>Board: CBSE</li>
+              <li>Percentage: 90%</li>
+            </ul>
+          </div>
+          <div class="edui">10th Boards</div>
+          <div class="edus">
+            <ul>
+              <li>School: St. Francis Xavier's School</li>
+              <li>Board: ICSE</li>
+              <li>Percentage: 90%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
